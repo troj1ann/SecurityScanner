@@ -1,105 +1,102 @@
-# 🛡️ Siber Güvenlik Tarama Aracı
+ 🛡️ Cybersecurity Scanner Tool
+A professional desktop application for detecting security vulnerabilities in your system.
 
-Sisteminizin güvenlik açıklarını tespit eden profesyonel bir masaüstü uygulaması.
+ 📋 Features
 
-## 📋 Özellikler
+ 🔍 Security Checks (18 Types)
+* ✅ Windows Defender status
+* ✅ Firewall verification
+* ✅ Open port scanning (12 risky ports)
+* ✅ Administrator account check
+* ✅ Password policy analysis
+* ✅ Automatic updates verification
+* ✅ Shared folder security check
+* ✅ UAC (User Account Control) verification
+* ✅ Remote Desktop (RDP) check
+* ✅ USB autorun verification
+* ✅ BitLocker disk encryption check
+* ✅ SMBv1 protocol check (CRITICAL!)
+* ✅ PowerShell Script Block Logging
+* ✅ Windows Script Host verification
+* ✅ Guest account check
+* ✅ Blank password policy check
+* ✅ Screen saver password verification
+* ✅ Network discovery check
 
-### 🔍 Güvenlik Kontrolleri (18 Adet)
-- ✅ Windows Defender kontrolü
-- ✅ Güvenlik duvarı kontrolü
-- ✅ Açık port taraması (12 riskli port)
-- ✅ Administrator hesabı kontrolü
-- ✅ Şifre politikası analizi
-- ✅ Otomatik güncelleme kontrolü
-- ✅ Paylaşılan klasör güvenlik kontrolü
-- ✅ UAC (Kullanıcı Hesabı Denetimi) kontrolü
-- ✅ Uzak Masaüstü (RDP) kontrolü
-- ✅ USB otomatik çalıştırma kontrolü
-- ✅ BitLocker disk şifreleme kontrolü
-- ✅ SMBv1 protokol kontrolü (KRİTİK!)
-- ✅ PowerShell Script Block Logging
-- ✅ Windows Script Host kontrolü
-- ✅ Misafir hesabı kontrolü
-- ✅ Boş şifre politikası kontrolü
-- ✅ Ekran koruyucu şifre kontrolü
-- ✅ Ağ keşfi kontrolü
+ 📊 Reporting Features
+* ✅ Scan history logging
+* ✅ Detailed reports (TXT, JSON, HTML)
+* ✅ Colorful terminal interface
+* ✅ Log recording system
+* ✅ Risk level analysis (Low/Medium/High/Critical)
 
-### 📊 Raporlama Özellikleri
-- ✅ Tarama geçmişi kaydetme
-- ✅ Detaylı raporlama (TXT, JSON, HTML)
-- ✅ Renkli terminal arayüzü
-- ✅ Log kayıt sistemi
-- ✅ Risk seviyesi analizi (Düşük/Orta/Yüksek/Kritik)
+ 🚀 Installation
 
-## 🚀 Kurulum
+ Requirements
+* Python 3.7 or higher
+* Windows operating system (for some checks)
+* Administrator privileges (for some scans)
 
-### Gereksinimler
-- Python 3.7 veya üzeri
-- Windows işletim sistemi (bazı kontroller için)
-- Yönetici yetkileri (bazı taramalar için)
-
-### Adımlar
-
-1. Projeyi klonlayın veya indirin
-2. Gerekli kütüphaneleri yükleyin:
+ Steps
+1. Clone or download the project
+2. Install required libraries:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Programı çalıştırın:
+3. Run the program:
 ```bash
 python main.py
 ```
 
-## 📦 EXE Oluşturma
-
+ 📦 Building EXE
 ```bash
 pip install pyinstaller
 pyinstaller main.spec
 ```
 
-## 📁 Proje Yapısı
-
+ 📁 Project Structure
 ```
 SecurityScanner/
-├── main.py                 # Ana program
-├── requirements.txt        # Gerekli kütüphaneler
-├── README.md              # Dokümantasyon
-├── modules/               # Ana modüller
-├── utils/                 # Yardımcı araçlar
-├── data/                  # Veri dosyaları
-└── logs/                  # Log dosyaları
+├── main.py                 # Main program
+├── requirements.txt        # Required libraries
+├── README.md              # Documentation
+├── modules/               # Core modules
+├── utils/                 # Utility tools
+├── data/                  # Data files
+└── logs/                  # Log files
 ```
 
-## ⚠️ Önemli Uyarılar
+⚠️ Important Warnings
 
-- Bu araç sadece **kendi sisteminizde** kullanılmalıdır
-- Başkasının sistemini izinsiz taramak **yasa dışıdır**
-- Bazı taramalar için **yönetici yetkisi** gerekebilir
-- Yalnızca eğitim ve yasal güvenlik testi amaçlıdır
+LEGAL DISCLAIMER:
+* ⚖️ This tool is for **EDUCATIONAL PURPOSES ONLY**
+* ⚖️ Only use on systems you **OWN** or have **WRITTEN PERMISSION** to test
+* ⚖️ Unauthorized scanning of systems is **ILLEGAL** and punishable by law
+* ⚖️ Administrator privileges may be required for some scans
+* ⚖️ The developer assumes **NO LIABILITY** for misuse of this tool
 
-## 📝 Kullanım
+ 📝 Usage
+1. Run the program
+2. Select "Start Scan" from the main menu
+3. Review results when scan completes
+4. Generate report if needed
 
-1. Programı çalıştırın
-2. Ana menüden "Taramayı Başlat" seçeneğini seçin
-3. Tarama tamamlandığında sonuçları inceleyin
-4. İsterseniz rapor oluşturun
+ 🔧 Development
+* Python 3.x
+* Modular architecture
+* Extensible structure
 
-## 🔧 Geliştirme
+ 📄 License
+MIT License - This project is for educational purposes. Use at your own risk.
 
-- Python 3.x
-- Modüler mimari
-- Genişletilebilir yapı
+ 👤 Developer
+**Troj1ann**
+* GitHub: [@troj1ann](https://github.com/troj1ann)
 
-## 📄 Lisans
-
-Bu proje eğitim amaçlıdır. Kendi sorumluluğunuzda kullanın.
-
-## 👤 Geliştirici
-
-Troj1ann
+ 🛡️ Ethical Use Statement
+This tool is designed to help system administrators and security professionals identify vulnerabilities in their own systems. Always ensure you have proper authorization before conducting security assessments.
 
 ---
 
-
-**Not:** Bu araç temel güvenlik kontrollerini yapar. Profesyonel güvenlik denetimi için uzman desteği alın.
+**Note:** This tool performs basic security checks. For professional security audits, consult with cybersecurity experts.
