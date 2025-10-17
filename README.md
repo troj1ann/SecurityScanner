@@ -1,9 +1,9 @@
- 🛡️ Cybersecurity Scanner Tool
+# 🛡️ Cybersecurity Scanner Tool
 A professional desktop application for detecting security vulnerabilities in your system.
 
- 📋 Features
+## 📋 Features
 
- 🔍 Security Checks (18 Types)
+### 🔍 Security Checks (18 Types)
 * ✅ Windows Defender status
 * ✅ Firewall verification
 * ✅ Open port scanning (12 risky ports)
@@ -23,39 +23,58 @@ A professional desktop application for detecting security vulnerabilities in you
 * ✅ Screen saver password verification
 * ✅ Network discovery check
 
- 📊 Reporting Features
+### 📊 Reporting Features
 * ✅ Scan history logging
 * ✅ Detailed reports (TXT, JSON, HTML)
 * ✅ Colorful terminal interface
 * ✅ Log recording system
 * ✅ Risk level analysis (Low/Medium/High/Critical)
 
- 🚀 Installation
+## 🚀 Installation
 
- Requirements
+### Requirements
 * Python 3.7 or higher
 * Windows operating system (for some checks)
-* Administrator privileges (for some scans)
+* **⚠️ Administrator privileges required** (must run as administrator)
 
- Steps
+### Steps
 1. Clone or download the project
 2. Install required libraries:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run the program:
+3. **Run the program as Administrator:**
+
+**Method 1 (Command Prompt):**
 ```bash
+# Right-click on Command Prompt → Run as administrator
+cd path\to\SecurityScanner
 python main.py
 ```
 
- 📦 Building EXE
+**Method 2 (PowerShell):**
+```powershell
+# Right-click on PowerShell → Run as administrator
+cd path\to\SecurityScanner
+python main.py
+```
+
+**Method 3 (Shortcut):**
+- Right-click on `main.py`
+- Select "Run as administrator"
+
+## 📦 Building EXE
 ```bash
 pip install pyinstaller
 pyinstaller main.spec
 ```
 
- 📁 Project Structure
+**To run the EXE as administrator:**
+- Right-click on the `.exe` file
+- Select "Run as administrator"
+
+## 📁 Project Structure
 ```
 SecurityScanner/
 ├── main.py                 # Main program
@@ -67,34 +86,39 @@ SecurityScanner/
 └── logs/                  # Log files
 ```
 
-⚠️ Important Warnings
+## ⚠️ Important Warnings
 
-LEGAL DISCLAIMER:
+**LEGAL DISCLAIMER:**
 * ⚖️ This tool is for **EDUCATIONAL PURPOSES ONLY**
 * ⚖️ Only use on systems you **OWN** or have **WRITTEN PERMISSION** to test
 * ⚖️ Unauthorized scanning of systems is **ILLEGAL** and punishable by law
-* ⚖️ Administrator privileges may be required for some scans
+* ⚖️ **Administrator privileges are REQUIRED** for most security checks
 * ⚖️ The developer assumes **NO LIABILITY** for misuse of this tool
 
- 📝 Usage
-1. Run the program
+**ADMINISTRATOR PRIVILEGES:**
+* 🔐 Many security checks require elevated privileges
+* 🔐 Run Command Prompt/PowerShell as administrator
+* 🔐 Some features may not work without admin rights
+
+## 📝 Usage
+1. **Run the program as administrator**
 2. Select "Start Scan" from the main menu
 3. Review results when scan completes
 4. Generate report if needed
 
- 🔧 Development
+## 🔧 Development
 * Python 3.x
 * Modular architecture
 * Extensible structure
 
- 📄 License
+## 📄 License
 MIT License - This project is for educational purposes. Use at your own risk.
 
- 👤 Developer
+## 👤 Developer
 **Troj1ann**
 * GitHub: [@troj1ann](https://github.com/troj1ann)
 
- 🛡️ Ethical Use Statement
+## 🛡️ Ethical Use Statement
 This tool is designed to help system administrators and security professionals identify vulnerabilities in their own systems. Always ensure you have proper authorization before conducting security assessments.
 
 ---
