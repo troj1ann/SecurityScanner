@@ -1,126 +1,135 @@
-# 🛡️ Cybersecurity Scanner Tool
-A professional desktop application for detecting security vulnerabilities in your system.
+# 🛡️ Siber Güvenlik Tarama Aracı
+Sisteminizdeki güvenlik açıklarını tespit etmek için profesyonel bir masaüstü uygulaması.
 
-## 📋 Features
+## 📋 Özellikler
 
-### 🔍 Security Checks (18 Types)
-* ✅ Windows Defender status
-* ✅ Firewall verification
-* ✅ Open port scanning (12 risky ports)
-* ✅ Administrator account check
-* ✅ Password policy analysis
-* ✅ Automatic updates verification
-* ✅ Shared folder security check
-* ✅ UAC (User Account Control) verification
-* ✅ Remote Desktop (RDP) check
-* ✅ USB autorun verification
-* ✅ BitLocker disk encryption check
-* ✅ SMBv1 protocol check (CRITICAL!)
-* ✅ PowerShell Script Block Logging
-* ✅ Windows Script Host verification
-* ✅ Guest account check
-* ✅ Blank password policy check
-* ✅ Screen saver password verification
-* ✅ Network discovery check
+### 🔍 Güvenlik Kontrolleri (18 Tür)
+* ✅ Windows Defender durumu
+* ✅ Güvenlik Duvarı doğrulama
+* ✅ Açık bağlantı noktası taraması (12 riskli bağlantı noktası)
+* ✅ Yönetici hesabı kontrolü
+* ✅ Parola politikası analizi
+* ✅ Otomatik güncellemelerin doğrulanması
+* ✅ Paylaşılan klasör güvenlik kontrolü
+* ✅ UAC (Kullanıcı Hesabı Denetimi) doğrulama
+* ✅ Uzak Masaüstü (RDP) kontrolü
+* ✅ USB otomatik çalıştırma (autorun) doğrulama
+* ✅ BitLocker disk şifreleme kontrolü
+* ✅ SMBv1 protokol kontrolü (KRİTİK!)
+* ✅ PowerShell Betik Bloğu Günlüğü (Script Block Logging)
+* ✅ Windows Betik Ana Bilgisayarı (Windows Script Host) doğrulama
+* ✅ Misafir hesabı (Guest account) kontrolü
+* ✅ Boş parola politikası kontrolü
+* ✅ Ekran koruyucu parola doğrulama
+* ✅ Ağ keşfi (Network discovery) kontrolü
 
-### 📊 Reporting Features
-* ✅ Scan history logging
-* ✅ Detailed reports (TXT, JSON, HTML)
-* ✅ Colorful terminal interface
-* ✅ Log recording system
-* ✅ Risk level analysis (Low/Medium/High/Critical)
+### 📊 Raporlama Özellikleri
+* ✅ Tarama geçmişi kaydı
+* ✅ Detaylı raporlar (TXT, JSON, HTML)
+* ✅ Renkli terminal arayüzü
+* ✅ Günlük kayıt sistemi
+* ✅ Risk seviyesi analizi (Düşük/Orta/Yüksek/Kritik)
 
-## 🚀 Installation
+## 🚀 Kurulum
 
-### Requirements
-* Python 3.7 or higher
-* Windows operating system (for some checks)
-* **⚠️ Administrator privileges required** (must run as administrator)
+### Gereksinimler
+* Python 3.7 veya üzeri
+* Windows işletim sistemi (bazı kontroller için)
+* **⚠️ Yönetici ayrıcalıkları gereklidir** (yönetici olarak çalıştırılmalıdır)
 
-### Steps
-1. Clone or download the project
-2. Install required libraries:
+### Adımlar
+1. Projeyi klonlayın veya indirin
+2. Gerekli kütüphaneleri yükleyin:
 ```bash
 pip install -r requirements.txt
-```
+Programı Yönetici olarak çalıştırın:
 
-3. **Run the program as Administrator:**
+Yöntem 1 (Komut İstemi - Command Prompt):
 
-**Method 1 (Command Prompt):**
-```bash
-# Right-click on Command Prompt → Run as administrator
+Bash
+
+# Komut İstemine sağ tıklayın → Yönetici olarak çalıştırın
 cd path\to\SecurityScanner
 python main.py
-```
+Yöntem 2 (PowerShell):
 
-**Method 2 (PowerShell):**
-```powershell
-# Right-click on PowerShell → Run as administrator
+PowerShell
+
+# PowerShell'e sağ tıklayın → Yönetici olarak çalıştırın
 cd path\to\SecurityScanner
 python main.py
-```
+Yöntem 3 (Kısayol):
 
-**Method 3 (Shortcut):**
-- Right-click on `main.py`
-- Select "Run as administrator"
+main.py dosyasına sağ tıklayın
 
-## 📦 Building EXE
-```bash
+"Yönetici olarak çalıştır"ı seçin
+
+📦 EXE Oluşturma
+Bash
+
 pip install pyinstaller
 pyinstaller main.spec
-```
+EXE dosyasını yönetici olarak çalıştırmak için:
 
-**To run the EXE as administrator:**
-- Right-click on the `.exe` file
-- Select "Run as administrator"
+.exe dosyasına sağ tıklayın
 
-## 📁 Project Structure
-```
+"Yönetici olarak çalıştır"ı seçin
+
+📁 Proje Yapısı
 SecurityScanner/
-├── main.py                 # Main program
-├── requirements.txt        # Required libraries
-├── README.md              # Documentation
-├── modules/               # Core modules
-├── utils/                 # Utility tools
-├── data/                  # Data files
-└── logs/                  # Log files
-```
+├── main.py                 # Ana program
+├── requirements.txt        # Gerekli kütüphaneler
+├── README.md              # Dokümantasyon
+├── modules/               # Çekirdek modüller
+├── utils/                 # Yardımcı araçlar
+├── data/                  # Veri dosyaları
+└── logs/                  # Log dosyaları
+⚠️ Önemli Uyarılar
+YASAL UYARI:
 
-## ⚠️ Important Warnings
+⚖️ Bu araç SADECE EĞİTİM AMAÇLIDIR
 
-**LEGAL DISCLAIMER:**
-* ⚖️ This tool is for **EDUCATIONAL PURPOSES ONLY**
-* ⚖️ Only use on systems you **OWN** or have **WRITTEN PERMISSION** to test
-* ⚖️ Unauthorized scanning of systems is **ILLEGAL** and punishable by law
-* ⚖️ **Administrator privileges are REQUIRED** for most security checks
-* ⚖️ The developer assumes **NO LIABILITY** for misuse of this tool
+⚖️ Yalnızca SAHİBİ OLDUĞUNUZ veya test etmek için YAZILI İZİN aldığınız sistemlerde kullanın
 
-**ADMINISTRATOR PRIVILEGES:**
-* 🔐 Many security checks require elevated privileges
-* 🔐 Run Command Prompt/PowerShell as administrator
-* 🔐 Some features may not work without admin rights
+⚖️ Sistemlerin izinsiz taranması YASALARA AYKIRIDIR ve kanunla cezalandırılabilir
 
-## 📝 Usage
-1. **Run the program as administrator**
-2. Select "Start Scan" from the main menu
-3. Review results when scan completes
-4. Generate report if needed
+⚖️ Çoğu güvenlik kontrolü için YÖNETİCİ AYRICALIKLARI GEREKLİDİR
 
-## 🔧 Development
-* Python 3.x
-* Modular architecture
-* Extensible structure
+⚖️ Geliştirici, bu aracın kötüye kullanılmasından dolayı HİÇBİR SORUMLULUK KABUL ETMEZ
 
-## 📄 License
-MIT License - This project is for educational purposes. Use at your own risk.
+YÖNETİCİ AYRICALIKLARI:
 
-## 👤 Developer
-**Troj1ann**
-* GitHub: [@troj1ann](https://github.com/troj1ann)
+🔐 Birçok güvenlik kontrolü yükseltilmiş ayrıcalıklar gerektirir
 
-## 🛡️ Ethical Use Statement
-This tool is designed to help system administrators and security professionals identify vulnerabilities in their own systems. Always ensure you have proper authorization before conducting security assessments.
+🔐 Komut İstemi/PowerShell'i yönetici olarak çalıştırın
 
----
+🔐 Bazı özellikler yönetici hakları olmadan çalışmayabilir
 
-**Note:** This tool performs basic security checks. For professional security audits, consult with cybersecurity experts.
+📝 Kullanım
+Programı yönetici olarak çalıştırın
+
+Ana menüden "Taramayı Başlat"ı seçin
+
+Tarama tamamlandığında sonuçları gözden geçirin
+
+Gerekirse rapor oluşturun
+
+🔧 Geliştirme
+Python 3.x
+
+Modüler mimari
+
+Genişletilebilir yapı
+
+📄 Lisans
+MIT Lisansı - Bu proje eğitim amaçlıdır. Kullanım riski size aittir.
+
+👤 Geliştirici
+Troj1ann
+
+GitHub: @troj1ann
+
+🛡️ Etik Kullanım Beyanı
+Bu araç, sistem yöneticilerinin ve güvenlik uzmanlarının kendi sistemlerindeki güvenlik açıklarını belirlemelerine yardımcı olmak için tasarlanmıştır. Güvenlik değerlendirmeleri yapmadan önce daima uygun yetkiye sahip olduğunuzdan emin olun.
+
+Not: Bu araç temel güvenlik kontrolleri gerçekleştirir. Profesyonel güvenlik denetimleri için siber güvenlik uzmanlarına danışın.
