@@ -55,7 +55,7 @@ python main.py
 
 ```bash
 pip install pyinstaller
-pyinstaller --onefile --name "GuvenlikTarayici" --icon=icon.ico main.py
+pyinstaller main.spec
 ```
 
 ## 📁 Proje Yapısı
@@ -97,8 +97,9 @@ Bu proje eğitim amaçlıdır. Kendi sorumluluğunuzda kullanın.
 
 ## 👤 Geliştirici
 
-Siber Güvenlik Tarama Aracı v1.0
+Troj1ann
 
 ---
+
 
 **Not:** Bu araç temel güvenlik kontrollerini yapar. Profesyonel güvenlik denetimi için uzman desteği alın.
