@@ -48,15 +48,14 @@ exe = EXE(
     upx=True,
     upx_exclude=[],
     runtime_tmpdir=None,
-    console=True,  # Konsol uygulaması için True
+    console=True,  
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
     icon='icon.ico',
-    # UAC (istek: uygulama yönetici yetkisi ile çalışsın)
     uac_admin=True,
-    # Eğer UIAccess gerektiğinde True yapılabilir; genelde False bırakılır.
     uac_uiAccess=False,
 )
+
